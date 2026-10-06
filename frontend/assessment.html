@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Assessment</title><link rel="stylesheet" href="/css/style.css"></head><body>
+<header><b>Privacy Risk Assessment</b><a href="/">Home</a><a href="/assessment.html">Assessment</a><a href="/dashboard.html">Dashboard</a></header>
+<main>
+<section id="form-section">
+<div class="notice">Choose the option that matches your <b>settings or habits</b>. Never type personal details here - only pick from the options. Your answers are processed in memory and are not stored.</div>
+<div class="sticky"><div class="bar"><div id="progress"></div></div><span id="progress-text" class="muted"></span>
+<button id="demo" class="btn alt" type="button">Load fictional demo profile</button></div>
+<div id="questions"></div>
+<p id="error" class="notice hidden"></p>
+<button id="submit" class="btn" type="button">Generate my privacy score</button>
+</section>
+<section id="results" class="hidden">
+<div class="card"><div class="grid"><div><div class="muted">Overall privacy risk (higher = more exposure)</div><div class="big" id="score"></div><span id="level" class="badge"></span>
+<p class="muted" id="assessment-id"></p></div><div><b>High-risk categories</b><ul id="high-cats"></ul></div></div>
+<p class="notice" id="disclaimer"></p>
+<a class="btn" id="report-view" target="_blank" rel="noopener">View report</a>
+<a class="btn alt" id="report-dl">Download report (HTML)</a>
+<button class="btn danger" id="delete" type="button">Delete my stored result</button></div>
+<div class="grid"><div class="card"><h3>Category risk (radar)</h3><div class="chart-box"><canvas id="radar"></canvas></div></div>
+<div class="card"><h3>Category scores</h3><div class="chart-box"><canvas id="bars"></canvas></div></div></div>
+<div class="card"><h3>Top findings</h3><ol id="findings"></ol></div>
+<div class="card"><h3>Personalised recommendations</h3><div id="recs"></div></div>
+<div class="card"><h3>Privacy improvement simulator</h3><p class="muted">"What happens if I improve my settings?" Tick changes and simulate.</p>
+<div id="sim-options" class="grid"></div><p><button class="btn" id="simulate" type="button">Simulate</button></p>
+<div id="sim-result" class="hidden"><div class="grid"><div><div class="muted">Current</div><div class="big" id="sim-before"></div><span class="badge" id="sim-before-level"></span></div>
+<div><div class="muted">Simulated</div><div class="big" id="sim-after"></div><span class="badge" id="sim-after-level"></span></div>
+<div><div class="muted">Risk reduction</div><div class="big" id="sim-delta"></div></div></div>
+<p class="notice" id="sim-disclaimer"></p></div></div>
+<a class="btn alt" href="/dashboard.html">Open dashboard</a>
+</section></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="/js/common.js"></script><script src="/js/assessment.js"></script></body></html>

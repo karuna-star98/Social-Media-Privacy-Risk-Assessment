@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Dashboard</title><link rel="stylesheet" href="/css/style.css"></head><body>
+<header><b>Privacy Risk Assessment</b><a href="/">Home</a><a href="/assessment.html">Assessment</a><a href="/dashboard.html">Dashboard</a></header>
+<main>
+<div class="card"><h2>Cybersecurity Privacy Dashboard</h2><p class="muted" id="source"></p>
+<a class="btn" href="/assessment.html">Start Privacy Assessment</a></div>
+<div class="grid" id="cards"></div>
+<div class="grid">
+<div class="card"><h3>1. Category risk scores</h3><div class="chart-box"><canvas id="c-cat"></canvas></div></div>
+<div class="card"><h3>2. Privacy risk distribution (synthetic)</h3><div class="chart-box"><canvas id="c-dist"></canvas></div></div>
+<div class="card"><h3>3. Top privacy weaknesses (% of synthetic profiles)</h3><div class="chart-box"><canvas id="c-weak"></canvas></div></div>
+<div class="card"><h3>4. Account security controls in place (%)</h3><div class="chart-box"><canvas id="c-acct"></canvas></div></div>
+<div class="card"><h3>5. Digital footprint hygiene (%)</h3><div class="chart-box"><canvas id="c-foot"></canvas></div></div>
+<div class="card"><h3>6. Privacy improvement comparison</h3><div class="chart-box"><canvas id="c-imp"></canvas></div><p class="muted" id="imp-note"></p></div>
+</div>
+<p class="notice">Population charts use <b>fictional synthetic records only</b>. Scores are educational estimates, not guarantees.</p>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="/js/common.js"></script><script src="/js/dashboard.js"></script></body></html>

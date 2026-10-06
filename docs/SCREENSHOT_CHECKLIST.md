@@ -1,0 +1,4 @@
+# Screenshot / proof checklist (save as .png in `screenshots/`)
+01_project_structure · 02_architecture_diagram · 03_homepage · 04_questionnaire · 05_profile_section · 06_personal_info_section · 07_location_section · 08_account_security_section · 09_social_engineering_section · 10_overall_score · 11_category_scores · 12_risk_radar_chart · 13_top_findings · 14_recommendations · 15_simulator_before · 16_simulator_after · 17_risk_reduction · 18_dashboard · 19_risk_distribution · 20_top_weaknesses_chart · 21_privacy_checklist · 22_privacy_report · 23_synthetic_dataset · 24_automated_tests (`pytest -v`) · 25_privacy_security_tests · 26_database_schema (`sqlite3 data/assessments.db .schema`) · 27_github_commits · 28_github_repository · 29_readme_preview
+
+Tip: use "Load fictional demo profile" for consistent, safe screenshots.
