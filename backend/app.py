@@ -6,10 +6,10 @@ Run from the project root:  python -m backend.app
 from pathlib import Path
 from flask import Flask, jsonify, request, send_from_directory
 from config import Config
-from .models import database as db
-from .routes.api import bp
-from .services.questionnaire import ValidationError
-from .utils.rate_limiter import RateLimiter
+from models import database as db
+from routes.api import bp
+from services.questionnaire import ValidationError
+from utils.rate_limiter import RateLimiter
 
 FRONTEND = Path(__file__).resolve().parent.parent / "frontend"
 
